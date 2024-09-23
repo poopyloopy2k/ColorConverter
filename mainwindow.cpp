@@ -153,6 +153,48 @@ void MainWindow::setRGB(int r, int g, int b)
     updatingRGB = false;
 }
 
+void MainWindow::getRGBFromSliders(int &r, int &g, int &b)
+{
+    r = ui->RedSlider->value();
+    g = ui->GreenSlider->value();
+    b = ui->BlueSlider->value();
+}
+
+void MainWindow::getRGBFromBoxes(int &r, int &g, int &b)
+{
+    r = ui->RedBox->value();
+    g = ui->GreenBox->value();
+    b = ui->BlueBox->value();
+}
+
+void MainWindow::getCMYKFromSliders(int &c, int &m, int &y, int &k)
+{
+    c = ui->CyanSlider->value();
+    m=  ui->MagentaSlider->value();
+    y = ui->YellowSlider->value();
+    k = ui->BlackSlider->value();
+}
+
+void MainWindow::getCMYKFromBoxes(int &c, int &m, int &y, int &k)
+{
+    c = ui->CyanBox->value();
+    m=  ui->MagentaBox->value();
+    y = ui->YellowBox->value();
+    k = ui->BlackBox->value();
+}
+
+void MainWindow::getHSVFromSliders(int &h, int &s, int &v)
+{
+    h = ui->HueSlider->value();
+    s = ui->SaturationSlider->value();
+    v = ui->ValueSlider->value();
+}
+void MainWindow::getHSVFromBoxes(int &h, int &s, int &v)
+{
+    h = ui->HueBox->value();
+    s = ui->SaturationBox->value();
+    v = ui->ValueBox->value();
+}
 
 
 void MainWindow::on_rgbSlider_valueChanged(int)
