@@ -18,7 +18,7 @@
 bash
 
 Copy
-git clone https://github.com/yourusername/color-converter.git
+git clone https://github.com/poopyloopy2k/color-converter.git
 Откройте проект в Qt Creator.
 Постройте и запустите проект.
 Без наличия Qt
